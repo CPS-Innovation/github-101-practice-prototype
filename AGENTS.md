@@ -9,6 +9,7 @@ This is a practice GOV.UK Prototype Kit prototype for a GitHub workshop. The peo
 - Use clear commit messages that say what changed and why.
 - When there is a merge conflict, explain both versions in plain English and ask which to keep. Do not choose for them.
 - Use `gh` (GitHub CLI) to open pull requests and releases when asked.
+- To bring the latest main into a branch, run `git fetch` then `git merge origin/main`. Do not rebase and do not use `git pull origin main` (it stops with a "divergent branches" error).
 
 ## Never, unless the person explicitly asks for it and you have explained the risk
 
