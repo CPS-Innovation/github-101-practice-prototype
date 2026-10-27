@@ -1,6 +1,6 @@
 # GitHub 101 practice prototype (github-101-practice-prototype)
 
-A practice GOV.UK Prototype Kit prototype for the GitHub 101 for designers workshop. Nothing here matters, so break it, fix it and try things out.
+A practice GOV.UK Prototype Kit prototype for the GitHub 101 for designers workshop. You can change anything here. Nothing in it is used for real work.
 
 The fictional service is "Apply for a community garden plot".
 
@@ -30,7 +30,7 @@ The fictional service is "Apply for a community garden plot".
 
 | Thing | What it's for |
 | --- | --- |
-| `main` | The real version. Don't push to it directly. |
+| `main` | The real version. Do not push to it directly. |
 | Tag `research-round-1` | Snapshot: start page and one question |
 | Tag `research-round-2` | Snapshot: reworded question, plus a new one |
 | Branch `demo-new-page` | Has an extra page at /demo-new-page. Switch to it to watch the prototype change. |
@@ -47,7 +47,8 @@ The fictional service is "Apply for a community garden plot".
 | Commit my changes with a clear message about what I changed. | A save point on your Mac |
 | Push my branch to GitHub. | GitHub gets your save points |
 | Open a pull request for my branch and give me the link. | A page on GitHub asking to merge into main |
-| Switch to main, pull, and delete my old branch. | Ready for the next change, after your PR is merged |
+| On GitHub, select Squash and merge, then Delete branch. | Your change is now in main |
+| Switch to main, pull, and delete my old branch. | Your Mac is ready for the next change |
 
 Type these yourself to check where you are:
 
@@ -59,7 +60,7 @@ git log --oneline -5
 
 ## Merge conflicts: current and incoming
 
-When Git can't merge two changes to the same lines, it marks them in the file like this:
+When Git cannot merge two changes to the same lines, it marks them in the file like this:
 
 ```
 <<<<<<< HEAD
@@ -81,6 +82,6 @@ Editors such as VS Code give you buttons for each conflict:
 - **Accept both changes**: keep both. For a heading, that means two headings, which is usually wrong
 - **Compare changes**: show them side by side
 
-There's no right button. It's a design decision, so pick the version you want, check the file looks right, then commit.
+Which button to use is a design decision. Choose the version you want, check the file looks right, then commit.
 
-Watch out: during a rebase, current and incoming swap round. That's one reason we ask the AI not to rebase.
+During a rebase, current and incoming swap round. That's one reason we ask the AI not to rebase.
