@@ -1,4 +1,4 @@
-# GitHub 101 practice prototype
+# GitHub 101 practice prototype (github-101-practice-prototype)
 
 A practice GOV.UK Prototype Kit prototype for the GitHub 101 for designers workshop. Nothing here matters, so break it, fix it and try things out.
 
@@ -10,7 +10,7 @@ The fictional service is "Apply for a community garden plot".
 
    ```
    git clone REPO-URL
-   cd github-101-practice
+   cd github-101-practice-prototype
    ```
 
 2. Install and run it:
