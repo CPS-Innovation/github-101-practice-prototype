@@ -56,3 +56,31 @@ git status
 git branch
 git log --oneline -5
 ```
+
+## Merge conflicts: current and incoming
+
+When Git can't merge two changes to the same lines, it marks them in the file like this:
+
+```
+<<<<<<< HEAD
+<h1 class="govuk-heading-xl">Get a plot in your local community garden</h1>
+=======
+<h1 class="govuk-heading-xl">Grow your own food in a community garden</h1>
+>>>>>>> main
+```
+
+| Word | What it means | In the example |
+| --- | --- | --- |
+| Current change | What's on the branch you're on now (HEAD). Usually your work. | The top half, from your branch |
+| Incoming change | What you're merging in. Usually main, with other people's work. | The bottom half, from main |
+
+Editors such as VS Code give you buttons for each conflict:
+
+- **Accept current change**: keep your version, drop theirs
+- **Accept incoming change**: keep their version, drop yours
+- **Accept both changes**: keep both. For a heading, that means two headings, which is usually wrong
+- **Compare changes**: show them side by side
+
+There's no right button. It's a design decision, so pick the version you want, check the file looks right, then commit.
+
+Watch out: during a rebase, current and incoming swap round. That's one reason we ask the AI not to rebase.

@@ -7,7 +7,7 @@ This is a practice GOV.UK Prototype Kit prototype for a GitHub workshop. The peo
 - Before running any Git command, say in one plain-English sentence what it will do and why.
 - After each step, run `git status` and explain the result in plain English: which branch they are on, and what has changed.
 - Use clear commit messages that say what changed and why.
-- When there is a merge conflict, explain both versions in plain English and ask which to keep. Do not choose for them.
+- When there is a merge conflict, explain both versions in plain English and ask which to keep. Do not choose for them. Call them the "current change" (the branch they are on) and the "incoming change" (what is being merged in, usually main), and say which branch each came from.
 - Use `gh` (GitHub CLI) to open pull requests and releases when asked.
 - To bring the latest main into a branch, run `git fetch` then `git merge origin/main`. Do not rebase and do not use `git pull origin main` (it stops with a "divergent branches" error).
 
