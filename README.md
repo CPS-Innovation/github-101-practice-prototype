@@ -9,7 +9,7 @@ The fictional service is "Apply for a community garden plot".
 1. Clone this repo. In your terminal, go to the folder where you keep prototypes and run:
 
    ```
-   git clone REPO-URL
+   git clone https://github.com/CPS-Innovation/github-101-practice-prototype.git
    cd github-101-practice-prototype
    ```
 
