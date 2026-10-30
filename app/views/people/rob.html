@@ -1,0 +1,25 @@
+{% extends "layouts/main.html" %}
+
+{#
+  Copy this file to app/views/people/your-name.html (lower case, hyphens, no spaces)
+  then change the text below. Your page will be at localhost:3000/people/your-name
+#}
+
+{% set pageName="About me" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Design team</span>
+    <h1 class="govuk-heading-xl">Rob</h1>
+
+    <p class="govuk-body">I work on: all the things</p>
+
+    <p class="govuk-body">A design pattern I like: whatever</p>
+
+    <p class="govuk-body">One thing I want to get better at with GitHub: understanding all the jargon</p>
+  </div>
+</div>
+
+{% endblock %}
